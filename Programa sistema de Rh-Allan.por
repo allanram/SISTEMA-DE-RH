@@ -4,8 +4,8 @@ programa
 	inclua biblioteca Tipos --> Tip
 	inclua biblioteca ServicosWeb --> S
 	inclua biblioteca Texto -->Te
-     inclua biblioteca Matematica --> M
-     inclua biblioteca Arquivos --> arq
+        inclua biblioteca Matematica --> M
+        inclua biblioteca Arquivos --> arq
 	inteiro operacao_cliente
 	funcao inicio()
 	{
@@ -107,31 +107,31 @@ programa
 	}
 	funcao simulador_adicional_noturno()
 	{
-       const inteiro HORAS_CONTRATUAIS =220
-       const real PERCENTUAL_ADICIONAL = 0.2
-       real salario_bruto
-       real valor_adicional
-       real valorAdicionalNoturno
-       real salarioAdicionado
-       inteiro horasNoturnasTrabalhadas
-       escreva("Informe seu salario:\n")
-       leia(salario_bruto)
-       escreva("Informe as horas noturnas trabalhadas:\n")
-       leia(horasNoturnasTrabalhadas)
-       valorAdicionalNoturno = calculaAdicionalNoturno(salario_bruto,horasNoturnasTrabalhadas)*PERCENTUAL_ADICIONAL
-       salarioAdicionado = valorAdicionalNoturno+salario_bruto
-       escreva("Seu salario adicionado as horas noturnas trabalhadas é de:"," ",salarioAdicionado)
-       escreveLinha()
-       retorna_menu()
+          const inteiro HORAS_CONTRATUAIS =220
+          const real PERCENTUAL_ADICIONAL = 0.2
+          real salario_bruto
+          real valor_adicional
+          real valorAdicionalNoturno
+          real salarioAdicionado
+          inteiro horasNoturnasTrabalhadas
+          escreva("Informe seu salario:\n")
+          leia(salario_bruto)
+          escreva("Informe as horas noturnas trabalhadas:\n")
+          leia(horasNoturnasTrabalhadas)
+         valorAdicionalNoturno = calculaAdicionalNoturno(salario_bruto,horasNoturnasTrabalhadas)*PERCENTUAL_ADICIONAL
+         salarioAdicionado = valorAdicionalNoturno+salario_bruto
+         escreva("Seu salario adicionado as horas noturnas trabalhadas é de:"," ",salarioAdicionado)
+          escreveLinha()
+          retorna_menu()
 	}
 	funcao simulador_horas_extras()
 	{
 		
-		real salario_bruto
-		inteiro horas_adicionais
-		const inteiro HORA_MENSAL = 220
-		real total_extra
-		escreva("Informe seu salario Bruto:\n")
+	     real salario_bruto
+	     inteiro horas_adicionais
+	     const inteiro HORA_MENSAL = 220
+	     real total_extra
+             escreva("Informe seu salario Bruto:\n")
 	     leia(salario_bruto)
 	     escreva("Informe o total de horas extras trabalhadas:\n")
 	     leia(horas_adicionais)
@@ -143,11 +143,11 @@ programa
 	}
 	funcao simulador_adicional_periculosidade()
 	{
-		real salarioBruto
-		real adicionalPericulo
-		escreva("Informe seu salário Bruto:\n")
-		leia(salarioBruto)
-		adicionalPericulo = salarioBruto*0.3
+	 real salarioBruto
+	  real adicionalPericulo
+          escreva("Informe seu salário Bruto:\n")
+          leia(salarioBruto)
+          adicionalPericulo = salarioBruto*0.3
           escreva("Seu salario somado a periculosidade/mes é de:",adicionalPericulo+salarioBruto)
           escreva("\nSeu adicional de periculosidade é de:",adicionalPericulo)
 	}
