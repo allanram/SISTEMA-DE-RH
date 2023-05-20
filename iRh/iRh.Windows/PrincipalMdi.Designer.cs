@@ -35,14 +35,14 @@
             this.simuladoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuDescontoInss = new System.Windows.Forms.ToolStripMenuItem();
             this.menuDescontoIrrf = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuBeneficioFerias = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuBeneficioValeTransporte = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuBeneficioSeguroDesemprego = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuBeneficoPis = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBeneficioAdicionalNoturno = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBeneficioFgts = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBeneficioHoraExtra = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuBeneficioFerias = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBeneficioPericulosidade = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuBeneficoPis = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuBeneficioSeguroDesemprego = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuBeneficioValeTransporte = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +70,7 @@
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cadastroToolStripMenuItem.Text = "Funcionarios";
+            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
             // 
             // simuladoresToolStripMenuItem
             // 
@@ -93,60 +94,70 @@
             this.menuDescontoInss.Name = "menuDescontoInss";
             this.menuDescontoInss.Size = new System.Drawing.Size(249, 22);
             this.menuDescontoInss.Text = "Desconto de INSS";
+            this.menuDescontoInss.Click += new System.EventHandler(this.menuDescontoInss_Click);
             // 
             // menuDescontoIrrf
             // 
             this.menuDescontoIrrf.Name = "menuDescontoIrrf";
             this.menuDescontoIrrf.Size = new System.Drawing.Size(249, 22);
             this.menuDescontoIrrf.Text = "Desconto de IRRF";
-            // 
-            // menuBeneficioFerias
-            // 
-            this.menuBeneficioFerias.Name = "menuBeneficioFerias";
-            this.menuBeneficioFerias.Size = new System.Drawing.Size(249, 22);
-            this.menuBeneficioFerias.Text = "Beneficio de Férias";
-            // 
-            // menuBeneficioValeTransporte
-            // 
-            this.menuBeneficioValeTransporte.Name = "menuBeneficioValeTransporte";
-            this.menuBeneficioValeTransporte.Size = new System.Drawing.Size(249, 22);
-            this.menuBeneficioValeTransporte.Text = "Beneficio de Vale transporte";
-            // 
-            // menuBeneficioSeguroDesemprego
-            // 
-            this.menuBeneficioSeguroDesemprego.Name = "menuBeneficioSeguroDesemprego";
-            this.menuBeneficioSeguroDesemprego.Size = new System.Drawing.Size(249, 22);
-            this.menuBeneficioSeguroDesemprego.Text = "Beneficio de Seguro Desemprego";
-            // 
-            // menuBeneficoPis
-            // 
-            this.menuBeneficoPis.Name = "menuBeneficoPis";
-            this.menuBeneficoPis.Size = new System.Drawing.Size(249, 22);
-            this.menuBeneficoPis.Text = "Beneficio de PIS";
+            this.menuDescontoIrrf.Click += new System.EventHandler(this.menuDescontoIrrf_Click);
             // 
             // menuBeneficioAdicionalNoturno
             // 
             this.menuBeneficioAdicionalNoturno.Name = "menuBeneficioAdicionalNoturno";
             this.menuBeneficioAdicionalNoturno.Size = new System.Drawing.Size(249, 22);
             this.menuBeneficioAdicionalNoturno.Text = "Beneficio de Adicional Noturno";
+            this.menuBeneficioAdicionalNoturno.Click += new System.EventHandler(this.menuBeneficioAdicionalNoturno_Click);
             // 
             // menuBeneficioFgts
             // 
             this.menuBeneficioFgts.Name = "menuBeneficioFgts";
             this.menuBeneficioFgts.Size = new System.Drawing.Size(249, 22);
             this.menuBeneficioFgts.Text = "Beneficio de Deposito FGTS";
+            this.menuBeneficioFgts.Click += new System.EventHandler(this.menuBeneficioFgts_Click);
             // 
             // menuBeneficioHoraExtra
             // 
             this.menuBeneficioHoraExtra.Name = "menuBeneficioHoraExtra";
             this.menuBeneficioHoraExtra.Size = new System.Drawing.Size(249, 22);
             this.menuBeneficioHoraExtra.Text = "Beneficio de Hora Extra";
+            this.menuBeneficioHoraExtra.Click += new System.EventHandler(this.menuBeneficioHoraExtra_Click);
+            // 
+            // menuBeneficioFerias
+            // 
+            this.menuBeneficioFerias.Name = "menuBeneficioFerias";
+            this.menuBeneficioFerias.Size = new System.Drawing.Size(249, 22);
+            this.menuBeneficioFerias.Text = "Beneficio de Férias";
+            this.menuBeneficioFerias.Click += new System.EventHandler(this.menuBeneficioFerias_Click);
             // 
             // menuBeneficioPericulosidade
             // 
             this.menuBeneficioPericulosidade.Name = "menuBeneficioPericulosidade";
             this.menuBeneficioPericulosidade.Size = new System.Drawing.Size(249, 22);
             this.menuBeneficioPericulosidade.Text = "Beneficio de Periculosidade";
+            this.menuBeneficioPericulosidade.Click += new System.EventHandler(this.menuBeneficioPericulosidade_Click);
+            // 
+            // menuBeneficoPis
+            // 
+            this.menuBeneficoPis.Name = "menuBeneficoPis";
+            this.menuBeneficoPis.Size = new System.Drawing.Size(249, 22);
+            this.menuBeneficoPis.Text = "Beneficio de PIS";
+            this.menuBeneficoPis.Click += new System.EventHandler(this.menuBeneficoPis_Click);
+            // 
+            // menuBeneficioSeguroDesemprego
+            // 
+            this.menuBeneficioSeguroDesemprego.Name = "menuBeneficioSeguroDesemprego";
+            this.menuBeneficioSeguroDesemprego.Size = new System.Drawing.Size(249, 22);
+            this.menuBeneficioSeguroDesemprego.Text = "Beneficio de Seguro Desemprego";
+            this.menuBeneficioSeguroDesemprego.Click += new System.EventHandler(this.menuBeneficioSeguroDesemprego_Click);
+            // 
+            // menuBeneficioValeTransporte
+            // 
+            this.menuBeneficioValeTransporte.Name = "menuBeneficioValeTransporte";
+            this.menuBeneficioValeTransporte.Size = new System.Drawing.Size(249, 22);
+            this.menuBeneficioValeTransporte.Text = "Beneficio de Vale transporte";
+            this.menuBeneficioValeTransporte.Click += new System.EventHandler(this.menuBeneficioValeTransporte_Click);
             // 
             // PrincipalMdi
             // 
