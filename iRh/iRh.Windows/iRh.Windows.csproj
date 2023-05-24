@@ -52,6 +52,7 @@
     <Compile Include="Cadastro\frmFuncionario.Designer.cs">
       <DependentUpon>frmFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core\Calculadora.cs" />
     <Compile Include="PrincipalMdi.cs">
       <SubType>Form</SubType>
     </Compile>
