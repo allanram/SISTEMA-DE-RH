@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using iRh.Windows.Core;
 
 namespace iRh.Windows.Simuladores
 {
@@ -15,6 +9,33 @@ namespace iRh.Windows.Simuladores
         public frmBeneficioValeTransporte()
         {
             InitializeComponent();
+        }
+
+        private void btnCalculaValeTransporte_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtValetransporte.Text))
+            {
+                MessageBox.Show("Informe um salário", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtValetransporte.Focus();
+                return;
+            }else
+            { 
+    
+                try
+                {
+                    var salario = double.Parse(txtValetransporte.Text);
+                    var valeTransporte = ValeTrasnporte.Calcula(salario);
+                    lblResultado.Text = valeTransporte.ToString();
+                    panelResultadoValeTransporte.Show();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Informe um salario válido", "Atenção Ex: 1850", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                }
+                
+            }
+            
         }
     }
 }

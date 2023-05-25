@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using iRh.Windows.Core;
 using System.Windows.Forms;
 
 namespace iRh.Windows.Simuladores
@@ -16,5 +10,31 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
+
+        private void btnCalculaFgts_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtSalario.Text))
+            {
+                MessageBox.Show("Informe um salario válido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSalario.Focus();
+                return;
+            }
+           
+            try
+            {
+              
+                var salario = double.Parse(txtSalario.Text);
+                var fgts = Fgts.Calcula(salario);
+                lblResultado.Text = fgts.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Informe salario ou meses trabalhados válidos.Ex: salario = 2000, meses = 12","Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                throw;
+            }
+            panelResultadoFgts.Show();
+        }
+
+       
     }
 }

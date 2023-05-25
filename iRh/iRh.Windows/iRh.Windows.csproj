@@ -53,6 +53,8 @@
       <DependentUpon>frmFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\Calculadora.cs" />
+    <Compile Include="Core\Fgts.cs" />
+    <Compile Include="Core\ValeTrasnporte.cs" />
     <Compile Include="PrincipalMdi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,7 +134,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Simuladores\frmBeneficioFgts.resx">
+      <DependentUpon>frmBeneficioFgts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmBeneficioValeTransporte.resx">
+      <DependentUpon>frmBeneficioValeTransporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmDescontoInss.resx">
       <DependentUpon>frmDescontoInss.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +158,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\valeTransporteImagem.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

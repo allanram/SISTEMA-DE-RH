@@ -34,7 +34,7 @@ namespace iRh.Windows.Simuladores
                 txtSalario.Focus();
                 throw;
             }
-            
+            panelResultado.Show(); 
             
         }
 
