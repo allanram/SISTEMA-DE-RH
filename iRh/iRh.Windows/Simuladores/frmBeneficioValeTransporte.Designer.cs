@@ -51,9 +51,9 @@
             // 
             this.btnCalculaValeTransporte.Location = new System.Drawing.Point(63, 184);
             this.btnCalculaValeTransporte.Name = "btnCalculaValeTransporte";
-            this.btnCalculaValeTransporte.Size = new System.Drawing.Size(182, 30);
+            this.btnCalculaValeTransporte.Size = new System.Drawing.Size(242, 30);
             this.btnCalculaValeTransporte.TabIndex = 1;
-            this.btnCalculaValeTransporte.Text = "Calcular FGTS";
+            this.btnCalculaValeTransporte.Text = "Calcular Vale Transporte";
             this.btnCalculaValeTransporte.UseVisualStyleBackColor = true;
             this.btnCalculaValeTransporte.Click += new System.EventHandler(this.btnCalculaValeTransporte_Click);
             // 
