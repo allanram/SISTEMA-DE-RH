@@ -19,20 +19,23 @@ namespace iRh.Windows.Simuladores
                 txtSalario.Focus();
                 return;
             }
-           
-            try
+            else
             {
-              
-                var salario = double.Parse(txtSalario.Text);
-                var fgts = Fgts.Calcula(salario);
-                lblResultado.Text = fgts.ToString();
+
+                try
+                {
+
+                    var salario = double.Parse(txtSalario.Text);
+                    var fgts = Fgts.Calcula(salario);
+                    lblResultado.Text = fgts.ToString();
+                    panelResultadoFgts.Show();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Informe salario ou meses trabalhados válidos.Ex: salario = 2000, meses = 12", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    
+                }
             }
-            catch (Exception)
-            {
-                MessageBox.Show("Informe salario ou meses trabalhados válidos.Ex: salario = 2000, meses = 12","Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                throw;
-            }
-            panelResultadoFgts.Show();
         }
 
        

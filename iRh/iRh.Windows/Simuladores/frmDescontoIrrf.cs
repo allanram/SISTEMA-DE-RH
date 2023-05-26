@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using iRh.Windows.Core;
 using System.Windows.Forms;
 
 namespace iRh.Windows.Simuladores
@@ -15,6 +9,29 @@ namespace iRh.Windows.Simuladores
         public frmDescontoIrrf()
         {
             InitializeComponent();
+        }
+
+        private void btnCalculaDescontoIrrf_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txtSalario.Text))
+            {
+                MessageBox.Show("Informe um salario", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSalario.Focus();
+                return;
+            }else
+            {
+                try
+                {
+                    var salario = double.Parse(txtSalario.Text);
+                    var valorImpostoRenda = salario - Fgts.Calcula(salario);
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
+            
         }
     }
 }

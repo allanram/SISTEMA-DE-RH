@@ -52,8 +52,10 @@
     <Compile Include="Cadastro\frmFuncionario.Designer.cs">
       <DependentUpon>frmFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core\AdicionalNoturno.cs" />
     <Compile Include="Core\Calculadora.cs" />
     <Compile Include="Core\Fgts.cs" />
+    <Compile Include="Core\ImpostoDeRenda.cs" />
     <Compile Include="Core\ValeTrasnporte.cs" />
     <Compile Include="PrincipalMdi.cs">
       <SubType>Form</SubType>
@@ -136,6 +138,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Simuladores\frmBeneficioAdicionalNoturno.resx">
+      <DependentUpon>frmBeneficioAdicionalNoturno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmBeneficioFgts.resx">
       <DependentUpon>frmBeneficioFgts.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmDescontoInss.resx">
       <DependentUpon>frmDescontoInss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmDescontoIrrf.resx">
+      <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -160,6 +168,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\valeTransporteImagem.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adicionalNoturno.1.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
