@@ -27,14 +27,15 @@ namespace iRh.Windows.Simuladores
                 var salario = double.Parse(txtSalario.Text);
                 var descontoInss = Inss.Calcula(salario);
                 lblResultado.Text = descontoInss.ToString();
+                panelResultado.Show();
             }
             catch (Exception)
             {
                 MessageBox.Show("Informe um salario Válido Ex.1300","Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtSalario.Focus();
-                throw;
+                
             }
-            panelResultado.Show(); 
+            
             
         }
 
