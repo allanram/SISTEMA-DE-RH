@@ -53,7 +53,8 @@
       <DependentUpon>frmFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\AdicionalNoturno.cs" />
-    <Compile Include="Core\Calculadora.cs" />
+    <Compile Include="Core\HorasExtras.cs" />
+    <Compile Include="Core\Inss.cs" />
     <Compile Include="Core\Fgts.cs" />
     <Compile Include="Core\ImpostoDeRenda.cs" />
     <Compile Include="Core\ValeTrasnporte.cs" />
@@ -146,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmBeneficioFgts.resx">
       <DependentUpon>frmBeneficioFgts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmBeneficioHoraExtra.resx">
+      <DependentUpon>frmBeneficioHoraExtra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmBeneficioValeTransporte.resx">
       <DependentUpon>frmBeneficioValeTransporte.cs</DependentUpon>

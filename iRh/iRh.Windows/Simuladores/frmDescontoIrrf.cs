@@ -23,12 +23,15 @@ namespace iRh.Windows.Simuladores
                 try
                 {
                     var salario = double.Parse(txtSalario.Text);
-                    var valorImpostoRenda = salario - Fgts.Calcula(salario);
+                    var impostoRenda = ImpostoDeRenda.calculaImpostoDeRenda(salario);
+                    var valorImpostoRenda = impostoRenda;
+                    lblResultadoImpostoRenda.Text = valorImpostoRenda.ToString();
+                    panelResultadoImpostoRenda.Show();
                 }
                 catch (Exception)
                 {
-
-                    throw;
+                    MessageBox.Show("Informe um salário válido.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    
                 }
             }
             

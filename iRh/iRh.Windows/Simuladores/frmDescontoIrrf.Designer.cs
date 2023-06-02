@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDescontoIrrf));
             this.lblSalario = new System.Windows.Forms.Label();
             this.btnCalculaDescontoIrrf = new System.Windows.Forms.Button();
             this.txtSalario = new System.Windows.Forms.TextBox();
+            this.panelResultadoImpostoRenda = new System.Windows.Forms.Panel();
+            this.lblResultadoImpostoRenda = new System.Windows.Forms.Label();
+            this.panelResultadoImpostoRenda.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblSalario
@@ -46,9 +50,9 @@
             // btnCalculaDescontoIrrf
             // 
             this.btnCalculaDescontoIrrf.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculaDescontoIrrf.Location = new System.Drawing.Point(46, 150);
+            this.btnCalculaDescontoIrrf.Location = new System.Drawing.Point(55, 151);
             this.btnCalculaDescontoIrrf.Name = "btnCalculaDescontoIrrf";
-            this.btnCalculaDescontoIrrf.Size = new System.Drawing.Size(174, 30);
+            this.btnCalculaDescontoIrrf.Size = new System.Drawing.Size(165, 30);
             this.btnCalculaDescontoIrrf.TabIndex = 1;
             this.btnCalculaDescontoIrrf.Text = "Calcular Desconto";
             this.btnCalculaDescontoIrrf.UseVisualStyleBackColor = true;
@@ -61,16 +65,39 @@
             this.txtSalario.Size = new System.Drawing.Size(147, 20);
             this.txtSalario.TabIndex = 2;
             // 
+            // panelResultadoImpostoRenda
+            // 
+            this.panelResultadoImpostoRenda.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelResultadoImpostoRenda.Controls.Add(this.lblResultadoImpostoRenda);
+            this.panelResultadoImpostoRenda.Location = new System.Drawing.Point(46, 197);
+            this.panelResultadoImpostoRenda.Name = "panelResultadoImpostoRenda";
+            this.panelResultadoImpostoRenda.Size = new System.Drawing.Size(224, 70);
+            this.panelResultadoImpostoRenda.TabIndex = 3;
+            this.panelResultadoImpostoRenda.Visible = false;
+            // 
+            // lblResultadoImpostoRenda
+            // 
+            this.lblResultadoImpostoRenda.AutoSize = true;
+            this.lblResultadoImpostoRenda.Location = new System.Drawing.Point(30, 22);
+            this.lblResultadoImpostoRenda.Name = "lblResultadoImpostoRenda";
+            this.lblResultadoImpostoRenda.Size = new System.Drawing.Size(55, 13);
+            this.lblResultadoImpostoRenda.TabIndex = 0;
+            this.lblResultadoImpostoRenda.Text = "Resultado";
+            // 
             // frmDescontoIrrf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(403, 319);
+            this.Controls.Add(this.panelResultadoImpostoRenda);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.btnCalculaDescontoIrrf);
             this.Controls.Add(this.lblSalario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDescontoIrrf";
             this.Text = "Desconto Imposto de Renda";
+            this.panelResultadoImpostoRenda.ResumeLayout(false);
+            this.panelResultadoImpostoRenda.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,5 +108,7 @@
         private System.Windows.Forms.Label lblSalario;
         private System.Windows.Forms.Button btnCalculaDescontoIrrf;
         private System.Windows.Forms.TextBox txtSalario;
+        private System.Windows.Forms.Panel panelResultadoImpostoRenda;
+        private System.Windows.Forms.Label lblResultadoImpostoRenda;
     }
 }
