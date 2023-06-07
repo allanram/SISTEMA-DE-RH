@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using iRh.Windows.Core;
 
 namespace iRh.Windows.Simuladores
 {
@@ -15,6 +9,31 @@ namespace iRh.Windows.Simuladores
         public frmBeneficioFerias()
         {
             InitializeComponent();
+        }
+
+        private void btnCalculaFerias_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txtSalario.Text))
+            {
+                MessageBox.Show("Informe um salario válido.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtSalario.Focus();
+                return;
+            }else
+            {
+                try
+                {
+                    var salario = double.Parse(txtSalario.Text);
+                    var valorFerias = BeneficioFerias.CalculaFerias(salario);
+                    lblResultadoFerias.Text = valorFerias.ToString();
+                    panelResultadoFerias.Show();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Informe um salário válido.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    
+                }
+            }
+            
         }
     }
 }

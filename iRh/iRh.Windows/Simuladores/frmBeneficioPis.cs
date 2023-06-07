@@ -16,5 +16,33 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
+
+        private void btnCalculaPis_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txtSalario.Text))
+            {
+                MessageBox.Show("Informe um salario.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSalario.Focus();
+                return;
+            }
+            if (string.IsNullOrEmpty(txtMesesTrabalhados.Text))
+            {
+                MessageBox.Show("Informe um salario.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtMesesTrabalhados.Focus();
+                return;
+            }
+            else
+            {
+                try
+                {
+                    
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
+        }
     }
 }

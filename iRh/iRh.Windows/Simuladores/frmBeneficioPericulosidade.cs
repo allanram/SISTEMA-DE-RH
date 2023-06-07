@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using iRh.Windows.Core;
 
 namespace iRh.Windows.Simuladores
 {
@@ -15,6 +9,26 @@ namespace iRh.Windows.Simuladores
         public frmBeneficioPericulosidade()
         {
             InitializeComponent();
+        }
+
+        private void btnCalculaPericulosidade_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txtSalario.Text))
+            {
+                MessageBox.Show("Informe um salario válido.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            try
+            {
+                var salario = double.Parse(txtSalario.Text);
+                var totalPericulosidade = Periculosidade.CalculaPericulosidade(salario);
+                lblResultadoPericulosidade.Text = totalPericulosidade.ToString();
+                panelResultadoPericulosidade.Show();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Informe um saário válido.", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            }
         }
     }
 }

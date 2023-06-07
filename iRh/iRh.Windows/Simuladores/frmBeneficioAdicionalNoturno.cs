@@ -24,6 +24,7 @@ namespace iRh.Windows.Simuladores
                 MessageBox.Show("Informe um salário", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtHorasNoturnas.Focus();
                 return;
+
             }else
             {
                 try

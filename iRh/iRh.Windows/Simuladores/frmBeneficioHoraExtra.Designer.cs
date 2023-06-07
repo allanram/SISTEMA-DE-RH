@@ -33,7 +33,6 @@
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtHorasExtras = new System.Windows.Forms.TextBox();
-            this.btnCalculaValorHoraExtra = new System.Windows.Forms.Button();
             this.rbEnvolve = new System.Windows.Forms.RadioButton();
             this.rbNaoEnvolve = new System.Windows.Forms.RadioButton();
             this.lblPergunta = new System.Windows.Forms.Label();
@@ -76,17 +75,6 @@
             this.txtHorasExtras.Size = new System.Drawing.Size(136, 20);
             this.txtHorasExtras.TabIndex = 3;
             // 
-            // btnCalculaValorHoraExtra
-            // 
-            this.btnCalculaValorHoraExtra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculaValorHoraExtra.Location = new System.Drawing.Point(45, 239);
-            this.btnCalculaValorHoraExtra.Name = "btnCalculaValorHoraExtra";
-            this.btnCalculaValorHoraExtra.Size = new System.Drawing.Size(163, 33);
-            this.btnCalculaValorHoraExtra.TabIndex = 4;
-            this.btnCalculaValorHoraExtra.Text = "calcular Hora Extra";
-            this.btnCalculaValorHoraExtra.UseVisualStyleBackColor = true;
-            this.btnCalculaValorHoraExtra.Click += new System.EventHandler(this.btnCalculaValorHoraExtra_Click);
-            // 
             // rbEnvolve
             // 
             this.rbEnvolve.AutoSize = true;
@@ -98,6 +86,7 @@
             this.rbEnvolve.TabStop = true;
             this.rbEnvolve.Text = "SIM";
             this.rbEnvolve.UseVisualStyleBackColor = true;
+            this.rbEnvolve.CheckedChanged += new System.EventHandler(this.rbEnvolve_CheckedChanged);
             // 
             // rbNaoEnvolve
             // 
@@ -110,6 +99,7 @@
             this.rbNaoEnvolve.TabStop = true;
             this.rbNaoEnvolve.Text = "NÃO";
             this.rbNaoEnvolve.UseVisualStyleBackColor = true;
+            this.rbNaoEnvolve.CheckedChanged += new System.EventHandler(this.rbNaoEnvolve_CheckedChanged);
             // 
             // lblPergunta
             // 
@@ -125,7 +115,7 @@
             // 
             this.panelResultadoBeneficioHoraExtra.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelResultadoBeneficioHoraExtra.Controls.Add(this.lblResultado);
-            this.panelResultadoBeneficioHoraExtra.Location = new System.Drawing.Point(45, 278);
+            this.panelResultadoBeneficioHoraExtra.Location = new System.Drawing.Point(45, 231);
             this.panelResultadoBeneficioHoraExtra.Name = "panelResultadoBeneficioHoraExtra";
             this.panelResultadoBeneficioHoraExtra.Size = new System.Drawing.Size(310, 100);
             this.panelResultadoBeneficioHoraExtra.TabIndex = 9;
@@ -150,7 +140,6 @@
             this.Controls.Add(this.lblPergunta);
             this.Controls.Add(this.rbNaoEnvolve);
             this.Controls.Add(this.rbEnvolve);
-            this.Controls.Add(this.btnCalculaValorHoraExtra);
             this.Controls.Add(this.txtHorasExtras);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSalario);
@@ -158,6 +147,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBeneficioHoraExtra";
             this.Text = "Beneficio Hora Extra";
+            this.Load += new System.EventHandler(this.frmBeneficioHoraExtra_Load);
             this.panelResultadoBeneficioHoraExtra.ResumeLayout(false);
             this.panelResultadoBeneficioHoraExtra.PerformLayout();
             this.ResumeLayout(false);
@@ -171,7 +161,6 @@
         private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtHorasExtras;
-        private System.Windows.Forms.Button btnCalculaValorHoraExtra;
         private System.Windows.Forms.RadioButton rbEnvolve;
         private System.Windows.Forms.RadioButton rbNaoEnvolve;
         private System.Windows.Forms.Label lblPergunta;

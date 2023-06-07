@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using iRh.Windows.Core;
 
 namespace iRh.Windows.Simuladores
 {
@@ -16,10 +10,17 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
-
-        private void btnCalculaValorHoraExtra_Click(object sender, EventArgs e)
+        private void frmBeneficioHoraExtra_Load(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txtSalario.Text))
+            rbNaoEnvolve.Checked = true;
+            panelResultadoBeneficioHoraExtra.Visible = false;
+
+        }
+
+        
+        private void rbNaoEnvolve_CheckedChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtSalario.Text))
             {
                 MessageBox.Show("Insira um salário valido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtSalario.Focus();
@@ -27,25 +28,62 @@ namespace iRh.Windows.Simuladores
             }
             if (string.IsNullOrEmpty(txtHorasExtras.Text))
             {
-                MessageBox.Show("Insira horas válidas","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Insira horas válidas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtHorasExtras.Focus();
                 return;
             }
+
             try
             {
                 var salario = double.Parse(txtSalario.Text);
                 var horasExtras = int.Parse(txtHorasExtras.Text);
+                var totalHorasExtras = HorasExtras.CalculaHorasExtras50(salario, horasExtras);
+                lblResultado.Text = totalHorasExtras.ToString();
+                panelResultadoBeneficioHoraExtra.Show();
+
 
             }
             catch (Exception)
             {
+                MessageBox.Show("Informe um salário ou Horas Extras válidos.Exemplo \n, salario = 3455, horas = 24", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-                throw;
+              
             }
 
-
         }
-         
-        
+
+        private void rbEnvolve_CheckedChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtSalario.Text))
+            {
+                MessageBox.Show("Insira um salário valido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSalario.Focus();
+                return;
+            }
+            if (string.IsNullOrEmpty(txtHorasExtras.Text))
+            {
+                MessageBox.Show("Insira horas válidas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtHorasExtras.Focus();
+                return;
+            }
+
+            try
+            {
+                var salario = double.Parse(txtSalario.Text);
+                var horasExtras = int.Parse(txtHorasExtras.Text);
+                var totalHorasExtras = HorasExtras.CalculaHorasExtras100(salario, horasExtras);
+                lblResultado.Text = totalHorasExtras.ToString();
+                panelResultadoBeneficioHoraExtra.Show();
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Informe um salário ou Horas Extras válidos.Exemplo \n, salario = 3455, horas = 24", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+            }
+        }
+
+       
     }
 }
