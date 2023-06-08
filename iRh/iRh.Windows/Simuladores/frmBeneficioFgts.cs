@@ -27,7 +27,7 @@ namespace iRh.Windows.Simuladores
 
                     var salario = double.Parse(txtSalario.Text);
                     var fgts = Fgts.Calcula(salario);
-                    lblResultado.Text = fgts.ToString();
+                    lblResultado.Text = fgts.ToString("C");
                     panelResultadoFgts.Show();
                 }
                 catch (Exception)

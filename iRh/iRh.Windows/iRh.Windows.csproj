@@ -60,6 +60,7 @@
     <Compile Include="Core\ImpostoDeRenda.cs" />
     <Compile Include="Core\Periculosidade.cs" />
     <Compile Include="Core\Pis.cs" />
+    <Compile Include="Core\SeguroDesemprego.cs" />
     <Compile Include="Core\ValeTrasnporte.cs" />
     <Compile Include="PrincipalMdi.cs">
       <SubType>Form</SubType>
@@ -163,6 +164,9 @@
     <EmbeddedResource Include="Simuladores\frmBeneficioPis.resx">
       <DependentUpon>frmBeneficioPis.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmBeneficioSeguroDesemprego.resx">
+      <DependentUpon>frmBeneficioSeguroDesemprego.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmBeneficioValeTransporte.resx">
       <DependentUpon>frmBeneficioValeTransporte.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,6 +194,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\adicionalNoturno.1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaDeFundoFerias.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdicionalNoturno.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalImagem.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalImage2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HoraExtra.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Periculosidade.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeguroDesemprego.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pis.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

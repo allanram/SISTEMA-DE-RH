@@ -21,7 +21,7 @@ namespace iRh.Windows.Simuladores
             {
                 var salario = double.Parse(txtSalario.Text);
                 var totalPericulosidade = Periculosidade.CalculaPericulosidade(salario);
-                lblResultadoPericulosidade.Text = totalPericulosidade.ToString();
+                lblResultadoPericulosidade.Text = totalPericulosidade.ToString("C");
                 panelResultadoPericulosidade.Show();
             }
             catch (Exception)

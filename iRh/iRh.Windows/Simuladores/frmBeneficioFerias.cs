@@ -24,7 +24,7 @@ namespace iRh.Windows.Simuladores
                 {
                     var salario = double.Parse(txtSalario.Text);
                     var valorFerias = BeneficioFerias.CalculaFerias(salario);
-                    lblResultadoFerias.Text = valorFerias.ToString();
+                    lblResultadoFerias.Text = valorFerias.ToString("C");
                     panelResultadoFerias.Show();
                 }
                 catch (Exception)

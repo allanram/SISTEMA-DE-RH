@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeneficioPis));
             this.lblSalario = new System.Windows.Forms.Label();
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.btnCalculaPis = new System.Windows.Forms.Button();
             this.panelResultadoPis = new System.Windows.Forms.Panel();
             this.lblResultadoPis = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblMesesTrabalhados = new System.Windows.Forms.Label();
             this.txtMesesTrabalhados = new System.Windows.Forms.TextBox();
             this.panelResultadoPis.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +59,7 @@
             // btnCalculaPis
             // 
             this.btnCalculaPis.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculaPis.Location = new System.Drawing.Point(37, 181);
+            this.btnCalculaPis.Location = new System.Drawing.Point(40, 164);
             this.btnCalculaPis.Name = "btnCalculaPis";
             this.btnCalculaPis.Size = new System.Drawing.Size(129, 31);
             this.btnCalculaPis.TabIndex = 2;
@@ -68,33 +69,33 @@
             // 
             // panelResultadoPis
             // 
-            this.panelResultadoPis.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelResultadoPis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panelResultadoPis.Controls.Add(this.lblResultadoPis);
-            this.panelResultadoPis.Location = new System.Drawing.Point(40, 240);
+            this.panelResultadoPis.Location = new System.Drawing.Point(40, 201);
             this.panelResultadoPis.Name = "panelResultadoPis";
-            this.panelResultadoPis.Size = new System.Drawing.Size(210, 74);
+            this.panelResultadoPis.Size = new System.Drawing.Size(372, 51);
             this.panelResultadoPis.TabIndex = 3;
             this.panelResultadoPis.Visible = false;
             // 
             // lblResultadoPis
             // 
             this.lblResultadoPis.AutoSize = true;
-            this.lblResultadoPis.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultadoPis.Location = new System.Drawing.Point(13, 18);
+            this.lblResultadoPis.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoPis.Location = new System.Drawing.Point(12, 15);
             this.lblResultadoPis.Name = "lblResultadoPis";
-            this.lblResultadoPis.Size = new System.Drawing.Size(86, 21);
+            this.lblResultadoPis.Size = new System.Drawing.Size(79, 20);
             this.lblResultadoPis.TabIndex = 4;
             this.lblResultadoPis.Text = "Resultado";
             // 
-            // label1
+            // lblMesesTrabalhados
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(239, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 25);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Informe seu salário:";
+            this.lblMesesTrabalhados.AutoSize = true;
+            this.lblMesesTrabalhados.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMesesTrabalhados.Location = new System.Drawing.Point(225, 68);
+            this.lblMesesTrabalhados.Name = "lblMesesTrabalhados";
+            this.lblMesesTrabalhados.Size = new System.Drawing.Size(282, 25);
+            this.lblMesesTrabalhados.TabIndex = 4;
+            this.lblMesesTrabalhados.Text = "Informe os meses trabalhados:";
             // 
             // txtMesesTrabalhados
             // 
@@ -107,15 +108,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 383);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.Pis;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(544, 323);
             this.Controls.Add(this.txtMesesTrabalhados);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblMesesTrabalhados);
             this.Controls.Add(this.panelResultadoPis);
             this.Controls.Add(this.btnCalculaPis);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBeneficioPis";
-            this.Text = "frmBeneficioPis";
+            this.Text = "Beneficio Pis";
             this.panelResultadoPis.ResumeLayout(false);
             this.panelResultadoPis.PerformLayout();
             this.ResumeLayout(false);
@@ -130,7 +135,7 @@
         private System.Windows.Forms.Button btnCalculaPis;
         private System.Windows.Forms.Panel panelResultadoPis;
         private System.Windows.Forms.Label lblResultadoPis;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblMesesTrabalhados;
         private System.Windows.Forms.TextBox txtMesesTrabalhados;
     }
 }

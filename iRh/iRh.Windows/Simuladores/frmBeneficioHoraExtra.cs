@@ -12,7 +12,7 @@ namespace iRh.Windows.Simuladores
         }
         private void frmBeneficioHoraExtra_Load(object sender, EventArgs e)
         {
-            rbNaoEnvolve.Checked = true;
+           
             panelResultadoBeneficioHoraExtra.Visible = false;
 
         }
@@ -38,7 +38,7 @@ namespace iRh.Windows.Simuladores
                 var salario = double.Parse(txtSalario.Text);
                 var horasExtras = int.Parse(txtHorasExtras.Text);
                 var totalHorasExtras = HorasExtras.CalculaHorasExtras50(salario, horasExtras);
-                lblResultado.Text = totalHorasExtras.ToString();
+                lblResultado.Text = totalHorasExtras.ToString("C");
                 panelResultadoBeneficioHoraExtra.Show();
 
 
@@ -72,7 +72,7 @@ namespace iRh.Windows.Simuladores
                 var salario = double.Parse(txtSalario.Text);
                 var horasExtras = int.Parse(txtHorasExtras.Text);
                 var totalHorasExtras = HorasExtras.CalculaHorasExtras100(salario, horasExtras);
-                lblResultado.Text = totalHorasExtras.ToString();
+                lblResultado.Text = totalHorasExtras.ToString("C");
                 panelResultadoBeneficioHoraExtra.Show();
 
             }

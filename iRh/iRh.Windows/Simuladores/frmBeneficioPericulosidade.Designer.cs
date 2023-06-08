@@ -90,12 +90,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.Periculosidade;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(542, 331);
             this.Controls.Add(this.btnCalculaPericulosidade);
             this.Controls.Add(this.panelResultadoPericulosidade);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmBeneficioPericulosidade";
             this.Text = "Beneficio Periculosidade";
             this.panelResultadoPericulosidade.ResumeLayout(false);

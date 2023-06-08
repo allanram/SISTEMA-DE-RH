@@ -43,7 +43,7 @@
             // 
             this.lblSalario.AutoSize = true;
             this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(55, 62);
+            this.lblSalario.Location = new System.Drawing.Point(15, 147);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(168, 25);
             this.lblSalario.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             this.lblHorasNoturnas.AutoSize = true;
             this.lblHorasNoturnas.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHorasNoturnas.Location = new System.Drawing.Point(55, 113);
+            this.lblHorasNoturnas.Location = new System.Drawing.Point(21, 77);
             this.lblHorasNoturnas.Name = "lblHorasNoturnas";
             this.lblHorasNoturnas.Size = new System.Drawing.Size(252, 25);
             this.lblHorasNoturnas.TabIndex = 1;
@@ -61,14 +61,14 @@
             // 
             // txtSalario
             // 
-            this.txtSalario.Location = new System.Drawing.Point(60, 90);
+            this.txtSalario.Location = new System.Drawing.Point(20, 189);
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(126, 20);
+            this.txtSalario.Size = new System.Drawing.Size(134, 20);
             this.txtSalario.TabIndex = 2;
             // 
             // txtHorasNoturnas
             // 
-            this.txtHorasNoturnas.Location = new System.Drawing.Point(60, 141);
+            this.txtHorasNoturnas.Location = new System.Drawing.Point(20, 114);
             this.txtHorasNoturnas.Name = "txtHorasNoturnas";
             this.txtHorasNoturnas.Size = new System.Drawing.Size(126, 20);
             this.txtHorasNoturnas.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             this.panelResultadoAdicionalNoturno.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelResultadoAdicionalNoturno.Controls.Add(this.lblResultadoAdicionalNoturno);
-            this.panelResultadoAdicionalNoturno.Location = new System.Drawing.Point(60, 221);
+            this.panelResultadoAdicionalNoturno.Location = new System.Drawing.Point(26, 235);
             this.panelResultadoAdicionalNoturno.Name = "panelResultadoAdicionalNoturno";
             this.panelResultadoAdicionalNoturno.Size = new System.Drawing.Size(228, 78);
             this.panelResultadoAdicionalNoturno.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             this.lblResultadoAdicionalNoturno.AutoSize = true;
             this.lblResultadoAdicionalNoturno.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultadoAdicionalNoturno.Location = new System.Drawing.Point(17, 21);
+            this.lblResultadoAdicionalNoturno.Location = new System.Drawing.Point(16, 26);
             this.lblResultadoAdicionalNoturno.Name = "lblResultadoAdicionalNoturno";
             this.lblResultadoAdicionalNoturno.Size = new System.Drawing.Size(86, 21);
             this.lblResultadoAdicionalNoturno.TabIndex = 5;
@@ -96,7 +96,7 @@
             // btnCalculaAdicionalNoturno
             // 
             this.btnCalculaAdicionalNoturno.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculaAdicionalNoturno.Location = new System.Drawing.Point(60, 168);
+            this.btnCalculaAdicionalNoturno.Location = new System.Drawing.Point(201, 178);
             this.btnCalculaAdicionalNoturno.Name = "btnCalculaAdicionalNoturno";
             this.btnCalculaAdicionalNoturno.Size = new System.Drawing.Size(148, 31);
             this.btnCalculaAdicionalNoturno.TabIndex = 5;
@@ -108,14 +108,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 346);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.AdicionalNoturno;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(541, 346);
             this.Controls.Add(this.btnCalculaAdicionalNoturno);
             this.Controls.Add(this.panelResultadoAdicionalNoturno);
             this.Controls.Add(this.txtHorasNoturnas);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblHorasNoturnas);
             this.Controls.Add(this.lblSalario);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmBeneficioAdicionalNoturno";
             this.Text = "Beneficio Adicional Noturno";
             this.panelResultadoAdicionalNoturno.ResumeLayout(false);

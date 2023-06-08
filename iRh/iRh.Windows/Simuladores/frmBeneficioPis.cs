@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using iRh.Windows.Core;
 
 namespace iRh.Windows.Simuladores
 {
@@ -35,12 +29,25 @@ namespace iRh.Windows.Simuladores
             {
                 try
                 {
+                    var salario = double.Parse(txtSalario.Text);
+                    var mesesTrabalhados = double.Parse(txtMesesTrabalhados.Text);
+                    var valorPis = Pis.CalculaPis(salario, mesesTrabalhados);
+                    if(valorPis == 0)
+                    {
+                        lblResultadoPis.Text = ("Sinto muito voce não tem direito ao beneficio Pis:(");
+                        panelResultadoPis.Show();
+                    }
+                    else
+                    {
+                        lblResultadoPis.Text = valorPis.ToString("C");
+                        panelResultadoPis.Show();
                     
+                    }
                 }
                 catch (Exception)
                 {
-
-                    throw;
+                    MessageBox.Show("Informe um salario e/ou Meses válidos", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    
                 }
             }
         }

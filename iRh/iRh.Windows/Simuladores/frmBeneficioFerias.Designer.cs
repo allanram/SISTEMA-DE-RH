@@ -72,7 +72,7 @@
             this.panelResultadoFerias.Controls.Add(this.lblResultadoFerias);
             this.panelResultadoFerias.Location = new System.Drawing.Point(52, 208);
             this.panelResultadoFerias.Name = "panelResultadoFerias";
-            this.panelResultadoFerias.Size = new System.Drawing.Size(304, 100);
+            this.panelResultadoFerias.Size = new System.Drawing.Size(208, 70);
             this.panelResultadoFerias.TabIndex = 3;
             this.panelResultadoFerias.Visible = false;
             // 
@@ -80,7 +80,7 @@
             // 
             this.lblResultadoFerias.AutoSize = true;
             this.lblResultadoFerias.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultadoFerias.Location = new System.Drawing.Point(23, 35);
+            this.lblResultadoFerias.Location = new System.Drawing.Point(15, 24);
             this.lblResultadoFerias.Name = "lblResultadoFerias";
             this.lblResultadoFerias.Size = new System.Drawing.Size(90, 21);
             this.lblResultadoFerias.TabIndex = 4;
@@ -90,12 +90,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 342);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.TelaDeFundoFerias;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(496, 366);
             this.Controls.Add(this.panelResultadoFerias);
             this.Controls.Add(this.btnCalculaFerias);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmBeneficioFerias";
             this.Text = "Beneficio Ferias";
             this.panelResultadoFerias.ResumeLayout(false);

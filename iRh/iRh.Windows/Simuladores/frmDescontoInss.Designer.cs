@@ -61,7 +61,7 @@
             this.btnCalcular.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.Location = new System.Drawing.Point(38, 172);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(183, 36);
+            this.btnCalcular.Size = new System.Drawing.Size(196, 36);
             this.btnCalcular.TabIndex = 2;
             this.btnCalcular.Text = "Calcular INSS";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -71,9 +71,9 @@
             // 
             this.panelResultado.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(38, 235);
+            this.panelResultado.Location = new System.Drawing.Point(38, 233);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(424, 121);
+            this.panelResultado.Size = new System.Drawing.Size(257, 93);
             this.panelResultado.TabIndex = 3;
             this.panelResultado.Visible = false;
             // 
@@ -81,7 +81,7 @@
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(139, 46);
+            this.lblResultado.Location = new System.Drawing.Point(19, 27);
             this.lblResultado.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(110, 30);
@@ -92,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 398);
+            this.ClientSize = new System.Drawing.Size(515, 398);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtSalario);

@@ -67,11 +67,11 @@
             // 
             // panelResultadoFgts
             // 
-            this.panelResultadoFgts.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelResultadoFgts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panelResultadoFgts.Controls.Add(this.lblResultado);
             this.panelResultadoFgts.Location = new System.Drawing.Point(84, 240);
             this.panelResultadoFgts.Name = "panelResultadoFgts";
-            this.panelResultadoFgts.Size = new System.Drawing.Size(310, 106);
+            this.panelResultadoFgts.Size = new System.Drawing.Size(189, 54);
             this.panelResultadoFgts.TabIndex = 3;
             this.panelResultadoFgts.Visible = false;
             // 
@@ -79,7 +79,7 @@
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(66, 35);
+            this.lblResultado.Location = new System.Drawing.Point(13, 15);
             this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(100, 25);
@@ -91,14 +91,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(768, 385);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(561, 374);
             this.Controls.Add(this.panelResultadoFgts);
             this.Controls.Add(this.btnCalculaFgts);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "frmBeneficioFgts";
             this.Text = "frmBeneficioFgts";
             this.panelResultadoFgts.ResumeLayout(false);

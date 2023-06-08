@@ -1,19 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iRh.Windows.Core
+﻿namespace iRh.Windows.Core
 {
-     public static class Pis
+    public static class Pis
     {
         const double ValorMes = 108.50;
-        public static double CalculaPis(double salario)
+       
+        public static double CalculaPis(double salario,double mesesTrabalhados)
         {
-           
+
+            if (salario < 2604.0)
+            {
+
+                return 0;
+
+            }
+            else 
+            {
+
+                var valorPis = ValorMes * mesesTrabalhados;
+                return valorPis;
+
+            }
             
-            return 0;
         }
     }
 }

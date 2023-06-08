@@ -25,7 +25,7 @@ namespace iRh.Windows.Simuladores
                     var salario = double.Parse(txtSalario.Text);
                     var impostoRenda = ImpostoDeRenda.calculaImpostoDeRenda(salario);
                     var valorImpostoRenda = impostoRenda;
-                    lblResultadoImpostoRenda.Text = valorImpostoRenda.ToString();
+                    lblResultadoImpostoRenda.Text = valorImpostoRenda.ToString("C");
                     panelResultadoImpostoRenda.Show();
                 }
                 catch (Exception)

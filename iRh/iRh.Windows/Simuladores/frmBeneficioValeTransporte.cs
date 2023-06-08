@@ -25,7 +25,7 @@ namespace iRh.Windows.Simuladores
                 {
                     var salario = double.Parse(txtValetransporte.Text);
                     var valeTransporte = ValeTrasnporte.Calcula(salario);
-                    lblResultado.Text = valeTransporte.ToString();
+                    lblResultado.Text = valeTransporte.ToString("C");
                     panelResultadoValeTransporte.Show();
                 }
                 catch (Exception)

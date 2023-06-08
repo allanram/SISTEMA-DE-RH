@@ -115,7 +115,7 @@
             // 
             this.panelResultadoBeneficioHoraExtra.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelResultadoBeneficioHoraExtra.Controls.Add(this.lblResultado);
-            this.panelResultadoBeneficioHoraExtra.Location = new System.Drawing.Point(45, 231);
+            this.panelResultadoBeneficioHoraExtra.Location = new System.Drawing.Point(45, 248);
             this.panelResultadoBeneficioHoraExtra.Name = "panelResultadoBeneficioHoraExtra";
             this.panelResultadoBeneficioHoraExtra.Size = new System.Drawing.Size(310, 100);
             this.panelResultadoBeneficioHoraExtra.TabIndex = 9;
@@ -135,6 +135,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.HoraExtra;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(693, 423);
             this.Controls.Add(this.panelResultadoBeneficioHoraExtra);
             this.Controls.Add(this.lblPergunta);
@@ -144,7 +146,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmBeneficioHoraExtra";
             this.Text = "Beneficio Hora Extra";
             this.Load += new System.EventHandler(this.frmBeneficioHoraExtra_Load);
