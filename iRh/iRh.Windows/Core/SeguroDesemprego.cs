@@ -14,13 +14,13 @@
 
                    return seguroDesemprego;
                }
-            else if(mediaSalario<= 3280.93)
+               else if(mediaSalario<= 3280.93)
                {
                 seguroDesemprego = (mediaSalario * 0.50) + 1574.69;
 
                    return seguroDesemprego;
                }
-            else
+               else
                {
                 seguroDesemprego = 2230.97;
 

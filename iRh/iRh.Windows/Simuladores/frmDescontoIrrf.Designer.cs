@@ -88,12 +88,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 319);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.IRRF;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(509, 319);
             this.Controls.Add(this.panelResultadoImpostoRenda);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.btnCalculaDescontoIrrf);
             this.Controls.Add(this.lblSalario);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmDescontoIrrf";
             this.Text = "Desconto Imposto de Renda";
             this.panelResultadoImpostoRenda.ResumeLayout(false);

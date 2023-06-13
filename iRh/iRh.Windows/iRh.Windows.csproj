@@ -54,6 +54,8 @@
     </Compile>
     <Compile Include="Core\AdicionalNoturno.cs" />
     <Compile Include="Core\BeneficioFerias.cs" />
+    <Compile Include="Core\Colaborador.cs" />
+    <Compile Include="Core\Estados.cs" />
     <Compile Include="Core\HorasExtras.cs" />
     <Compile Include="Core\Inss.cs" />
     <Compile Include="Core\Fgts.cs" />
@@ -218,6 +220,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Pis.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INSS.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRRF.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnTelefomneImageFrmFuncionario.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-whatsapp.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
