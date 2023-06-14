@@ -1,13 +1,6 @@
-﻿using System;
+﻿using iRh.Windows.Cadastro;
 using iRh.Windows.Simuladores;
-using iRh.Windows.Cadastro;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using System.Windows.Forms;
 
 namespace iRh.Windows
@@ -93,6 +86,13 @@ namespace iRh.Windows
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new frmFuncionario();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void simulaçãoCompletaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new frmSimulacaoCompleta();
             form.MdiParent = this;
             form.Show();
         }
