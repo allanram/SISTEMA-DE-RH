@@ -16,27 +16,27 @@ namespace iRh.Windows.Core
         public string Gia { get; set; }
         public string Ddd { get; set; }
         public string Siafi { get; set; }
+        public bool Erro { get; set; }
 
-        public Endereco obterPorCep(string cep)
+
+        public Endereco ObterPorCep(string cep)
         {
             var enderecoDaApi = new Endereco();
 
-            //Instancia HTTP que permite obter informacoes da Internet atraves de uma URL
+            //Instancia HTTP que permite obter informações da Internet através de uma URL
+            var http = new HttpClient();
 
-            var http = new HttpClient(); 
-            var url = new Uri ("https://viacep.com.br/ws/" + cep + "/jonson");
+            var url = new Uri("https://viacep.com.br/ws/" + cep + "/json/");
             var result = http.GetAsync(url).GetAwaiter().GetResult();
 
             //Converte o resultado obtido em uma string
-
             var resultContent = result.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
             //Converte a string json para nossa classe ViaCepWrapper
-
             enderecoDaApi = JsonConvert.DeserializeObject<Endereco>(resultContent);
-
-
             return enderecoDaApi;
+
+            
         }
 
 

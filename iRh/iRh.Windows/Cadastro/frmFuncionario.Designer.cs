@@ -37,26 +37,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCep = new System.Windows.Forms.TextBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtLogradouro = new System.Windows.Forms.TextBox();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.TxtDdd = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.cmbEstados = new System.Windows.Forms.ComboBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button2 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.cmbDocumentoDeIdentificacao = new System.Windows.Forms.ComboBox();
+            this.txtCep = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lblNome
@@ -123,16 +123,9 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "CEP";
             // 
-            // txtCep
-            // 
-            this.txtCep.Location = new System.Drawing.Point(42, 156);
-            this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(100, 20);
-            this.txtCep.TabIndex = 8;
-            // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(160, 153);
+            this.btnPesquisar.Location = new System.Drawing.Point(115, 153);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisar.TabIndex = 9;
@@ -185,33 +178,33 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "UF/ESTADO";
             // 
-            // textBox2
+            // txtLogradouro
             // 
-            this.textBox2.Location = new System.Drawing.Point(42, 231);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 20);
-            this.textBox2.TabIndex = 15;
+            this.txtLogradouro.Location = new System.Drawing.Point(42, 231);
+            this.txtLogradouro.Name = "txtLogradouro";
+            this.txtLogradouro.Size = new System.Drawing.Size(168, 20);
+            this.txtLogradouro.TabIndex = 15;
             // 
-            // textBox3
+            // txtBairro
             // 
-            this.textBox3.Location = new System.Drawing.Point(360, 231);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(168, 20);
-            this.textBox3.TabIndex = 16;
+            this.txtBairro.Location = new System.Drawing.Point(360, 231);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(168, 20);
+            this.txtBairro.TabIndex = 16;
             // 
-            // textBox5
+            // txtCidade
             // 
-            this.textBox5.Location = new System.Drawing.Point(42, 287);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(168, 20);
-            this.textBox5.TabIndex = 18;
+            this.txtCidade.Location = new System.Drawing.Point(42, 287);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(168, 20);
+            this.txtCidade.TabIndex = 18;
             // 
-            // textBox6
+            // txtNumero
             // 
-            this.textBox6.Location = new System.Drawing.Point(247, 231);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(93, 20);
-            this.textBox6.TabIndex = 19;
+            this.txtNumero.Location = new System.Drawing.Point(247, 231);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(93, 20);
+            this.txtNumero.TabIndex = 19;
             // 
             // label8
             // 
@@ -222,19 +215,19 @@
             this.label8.TabIndex = 20;
             this.label8.Text = "DDD";
             // 
-            // textBox7
+            // TxtDdd
             // 
-            this.textBox7.Location = new System.Drawing.Point(42, 351);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(28, 20);
-            this.textBox7.TabIndex = 21;
+            this.TxtDdd.Location = new System.Drawing.Point(42, 351);
+            this.TxtDdd.Name = "TxtDdd";
+            this.TxtDdd.Size = new System.Drawing.Size(28, 20);
+            this.TxtDdd.TabIndex = 21;
             // 
-            // textBox8
+            // txtTelefone
             // 
-            this.textBox8.Location = new System.Drawing.Point(102, 351);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(142, 20);
-            this.textBox8.TabIndex = 22;
+            this.txtTelefone.Location = new System.Drawing.Point(102, 351);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(142, 20);
+            this.txtTelefone.TabIndex = 22;
             // 
             // label9
             // 
@@ -293,31 +286,39 @@
             this.cmbDocumentoDeIdentificacao.Size = new System.Drawing.Size(121, 21);
             this.cmbDocumentoDeIdentificacao.TabIndex = 29;
             // 
+            // txtCep
+            // 
+            this.txtCep.Location = new System.Drawing.Point(42, 156);
+            this.txtCep.Mask = "00000-000";
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(66, 20);
+            this.txtCep.TabIndex = 30;
+            // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtCep);
             this.Controls.Add(this.cmbDocumentoDeIdentificacao);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.cmbEstados);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.TxtDdd);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNumero);
+            this.Controls.Add(this.txtCidade);
+            this.Controls.Add(this.txtBairro);
+            this.Controls.Add(this.txtLogradouro);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnPesquisar);
-            this.Controls.Add(this.txtCep);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label1);
@@ -343,25 +344,25 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtLogradouro;
+        private System.Windows.Forms.TextBox txtBairro;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox TxtDdd;
+        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cmbEstados;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cmbDocumentoDeIdentificacao;
+        private System.Windows.Forms.MaskedTextBox txtCep;
     }
 }
