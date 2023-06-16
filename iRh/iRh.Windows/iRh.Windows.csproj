@@ -189,6 +189,9 @@
     <EmbeddedResource Include="Simuladores\frmDescontoIrrf.resx">
       <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmSimulacaoCompleta.resx">
+      <DependentUpon>frmSimulacaoCompleta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
