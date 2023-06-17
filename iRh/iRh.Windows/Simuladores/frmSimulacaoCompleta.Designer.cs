@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.lblSalario = new System.Windows.Forms.Label();
+            this.lblEnunciado = new System.Windows.Forms.Label();
+            this.txtSalario = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
@@ -67,30 +67,32 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "label3";
             // 
-            // label4
+            // lblSalario
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 91);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.lblSalario.AutoSize = true;
+            this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalario.Location = new System.Drawing.Point(22, 91);
+            this.lblSalario.Name = "lblSalario";
+            this.lblSalario.Size = new System.Drawing.Size(246, 21);
+            this.lblSalario.TabIndex = 3;
+            this.lblSalario.Text = "INFORME SEU SALARIO BRUTO:";
             // 
-            // label5
+            // lblEnunciado
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(90, 31);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.lblEnunciado.AutoSize = true;
+            this.lblEnunciado.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnunciado.Location = new System.Drawing.Point(21, 53);
+            this.lblEnunciado.Name = "lblEnunciado";
+            this.lblEnunciado.Size = new System.Drawing.Size(514, 21);
+            this.lblEnunciado.TabIndex = 4;
+            this.lblEnunciado.Text = "INSIRA OS DADOS ABAIXO PARA IMPRESSÃO DO DETALHAMENTO:";
             // 
-            // maskedTextBox1
+            // txtSalario
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(25, 130);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 5;
+            this.txtSalario.Location = new System.Drawing.Point(26, 125);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(100, 20);
+            this.txtSalario.TabIndex = 5;
             // 
             // maskedTextBox2
             // 
@@ -101,7 +103,7 @@
             // 
             // maskedTextBox3
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(148, 130);
+            this.maskedTextBox3.Location = new System.Drawing.Point(323, 200);
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
             this.maskedTextBox3.TabIndex = 7;
@@ -121,9 +123,9 @@
             this.Controls.Add(this.maskedTextBox4);
             this.Controls.Add(this.maskedTextBox3);
             this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtSalario);
+            this.Controls.Add(this.lblEnunciado);
+            this.Controls.Add(this.lblSalario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -141,9 +143,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Label lblSalario;
+        private System.Windows.Forms.Label lblEnunciado;
+        private System.Windows.Forms.MaskedTextBox txtSalario;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.MaskedTextBox maskedTextBox4;
